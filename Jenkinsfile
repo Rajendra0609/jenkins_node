@@ -13,7 +13,7 @@ pipeline {
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'Git branch to build')
         choice(name: 'DEPLOY_ENV', choices: ['test', 'prod'], description: 'Deployment environment')
-        string(name: 'DOCKER_HUB_REPO', defaultValue: 'daggu1997/jenkins', description: 'Enter the Docker Hub image name (e.g., daggu1997/kubejenkins)')
+        string(name: 'DOCKER_HUB_REPO', defaultValue: 'daggu1997/node_jenkins', description: 'Enter the Docker Hub image name (e.g., daggu1997/node_kube)')
     }
 
     environment {
